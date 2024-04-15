@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/emerald"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- The bill amount -->
+
+    <TextView
+        android:id="@+id/widthLabel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/width_label"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/heightLabel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widthLabel"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="@string/height_label"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- The tip percent -->
+
+    <EditText
+        android:id="@+id/billAmountEditText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/widthLabel"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toRightOf="@+id/widthLabel"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/heightLabel"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@+id/heightLabel"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:textSize="20sp">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/areaLabel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/widthLabel"
+        android:layout_below="@+id/heightLabel"
+        android:padding="10dp"
+        android:text="@string/area_label"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <!-- the tip amount -->
+
+    <TextView
+        android:id="@+id/areaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/areaLabel"
+        android:layout_alignRight="@id/areaLabel"
+        android:layout_marginRight="-100dp"
+        android:padding="5dp"
+        android:text=""
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/perimeterLabel"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/areaLabel"
+        android:padding="10dp"
+        android:text="@string/perimeter_label"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/perimeterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/perimeterLabel"
+        android:layout_alignRight="@id/perimeterLabel"
+        android:layout_marginRight="-100dp"
+        android:padding="5dp"
+        android:text=""
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>
