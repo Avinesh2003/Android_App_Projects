@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/restart"
+        android:icon="@drawable/restart"
+        android:title="Help"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/quit"
+        android:icon="@drawable/exit"
+        android:title="Help"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/about_game"
+        android:title="About Game"
+        android:icon="@drawable/about"
+        app:showAsAction="ifRoom"/>
+
+
+
+
+
+</menu>
