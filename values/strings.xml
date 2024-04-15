@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="New_Game">New Game</string>
+    <string name="Info_text">info label</string>
+  <string name="Humans_turn">Human Turn</string>
+  <string name="Computers_turn">Computer Turn</string>
+    <string name="HumanWins">Human</string>
+    <string name="ComputerWins">Computer</string>
+    <string name="numberOfTies">Ties</string>
+    <string name="zero">0</string>
+
+</resources>
